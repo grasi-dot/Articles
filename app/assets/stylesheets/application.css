@@ -1,15 +1,53 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+ *{
+    margin: 0;
+    padding: 0;
+
+  }
+
+.container {
+  font-family: "Poppins", sans-serif;
+  background: #dcd4ec;
+  text-align: center;
+}
+.container .nav-bar {
+  background: #c09ccc;
+  height: 4em;
+	margin-bottom: 1em;
+  }
+
+.container .nav-bar .logo{
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  color: #4c445c;
+  line-height: 2;
+}
+
+.index .title h1 {
+  color: #4c445c;
+}
+
+.index .index-time {
+  line-height: 1.8;
+}
+
+.index .list-article{
+  line-height: 4;
+}
+
+.index .teste{
+  
+}
+
+.index .new-article button{
+  min-width: 300px;
+  min-height: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #4c445c;
+  background:#c09ccc;
+  border: none;
+  border-radius: 1000px;
+}

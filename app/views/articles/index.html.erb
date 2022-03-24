@@ -1,0 +1,25 @@
+<div class="index">
+  <div class="title">
+    <h1>Lista de artigos</h1>
+  </div>
+
+  <div class="index-time">
+    Este blog tem <%= Article.public_count %> artigos cadastrados!
+  </div>
+
+  <div class="teste">
+    <ul class="list-article">
+      <% @articles.each do |article| %>
+        <% unless article.archived? %>
+          <li>
+            <%= link_to article.title, article %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="new-article">
+    <button><%= link_to "New Article", new_article_path %> </button>
+  </div>
+</div>
