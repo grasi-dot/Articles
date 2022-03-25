@@ -9,13 +9,27 @@
   background: #dcd4ec;
   text-align: center;
 }
-.container .nav-bar {
-  background: #c09ccc;
-  height: 4em;
-	margin-bottom: 1em;
-  }
 
-.container .nav-bar .logo{
+.nav-bar {
+  background: #c09ccc;
+  border-bottom: 1px solid rgb(210, 208, 208);
+  margin-bottom: 35px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33383c !important;
+  transition: all .2s ease-in;
+
+}
+
+nav a:hover{
+  opacity: 0.7;
+}
+
+.logo{
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -23,31 +37,225 @@
   line-height: 2;
 }
 
-.index .title h1 {
+.title{ 
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  color: #4c445c;
+  line-height: 2;
+}
+
+h1 {
   color: #4c445c;
 }
 
-.index .index-time {
+.index-time {
   line-height: 1.8;
 }
 
-.index .list-article{
-  line-height: 4;
+.list-article {
+  list-style-type: none;
 }
 
-.index .teste{
-  
+.card {
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: white;
+  text-align: left;
+  border-radius: 5px;
+  padding: 50px;
+  border-color: #c09ccc;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-block: 20px;
+
 }
 
-.index .new-article button{
+.card h3{
+  text-align: center;
+  color: #343a40;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.leia{
+  text-align: center;
+}
+
+#new-article-btn-cont{
   min-width: 300px;
   min-height: 40px;
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #4c445c;
   background:#c09ccc;
-  border: none;
-  border-radius: 1000px;
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  margin-block: 20px;
+}
+
+.btn:hover{
+  opacity: 0.7;
+}
+
+#new-header{
+  color:  #343a40;
+  margin-bottom: 50px;
+}
+
+.form-container{
+  margin-bottom: 50px;
+  text-align: left;
+  background-color: white !important;
+  border-radius: 5px;
+  padding: 50px;
+  border-color: grey;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-block: 20px;
+}
+
+div input[type="text"], div textarea{
+  width: 900px;
+  display: block;
+  transition: border-color 0.1s ease-in;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+
+}
+
+div input[type="text"]:focus, div textarea:focus{
+  border: 2px solid #945cac;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div input[type="text"]{
+  margin-bottom: 35px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #dcd4ec;
+}
+
+div textarea{
+  height: 200px;
+  border-radius: 5px;
+  margin-bottom:35px;
+  border: 1px solid #dcd4ec;
+
+}
+
+.create-btn{
+  border: #4c445c;;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4c445c;
+  background:#c09ccc;
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  margin-block: 20px;
+}
+
+.create-btn:hover{
+  opacity: 0.7;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-Left: 20px;
+  margin-right: 20px;
+}
+
+.title2 { 
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  color: #4c445c;
+  line-height: 2;
+}
+
+.edit-btn {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid  #4c445c;
+  font-size: 1rem;
+  background:#c09ccc;
+  color: #4c445c;
+
+}
+
+.delete-btn {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid  #4c445c;
+  font-size: 1rem;
+  background:#c09ccc;
+  color: #4c445c;
+}
+
+.delete-btn:hover, .edit-btn:hover{
+  opacity: 0.7;
+}
+
+.article-body {
+  padding-bottom: 2%;
+  text-align: left;
+  margin-Left: 20px;
+  margin-right: 20px;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  padding-bottom: 2%;
+  text-align: left;
+  margin-Left: 20px;
+  margin-right: 20px;
+}
+
+.article-body {
+  padding-bottom: 2%;
+  text-align: justify;
+
+}
+
+.comment-container {
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  border-color: #c09ccc;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-block: 20px;
+}
+
+.comment-form-container {
+  margin-bottom: 50px;
+  text-align:left;
+  background-color: white !important;
+  border-radius: 5px;
+  padding: 50px;
+  border-color: #c09ccc; 
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-block: 20px;
+}
+.add-coments{
+  line-height: 2;
 }
