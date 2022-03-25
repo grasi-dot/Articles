@@ -118,28 +118,6 @@ h1 {
   margin-block: 20px;
 }
 
-div input[type="text"], div textarea{
-  width: 900px;
-  display: block;
-  transition: border-color 0.1s ease-in;
-  outline: none;
-  font-family: inherit;
-  font-size: 1.1rem;
-
-}
-
-div input[type="text"]:focus, div textarea:focus{
-  border: 2px solid #945cac;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-div input[type="text"]{
-  margin-bottom: 35px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #dcd4ec;
-}
-
 div textarea{
   height: 200px;
   border-radius: 5px;
@@ -256,6 +234,29 @@ div textarea{
   margin-right: 200px;
   margin-block: 20px;
 }
+
+div input[type="text"], div textarea{
+  width: 750px;
+  display: block;
+  transition: border-color 0.1s ease-in;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+
+}
+
+div input[type="text"]:focus, div textarea:focus{
+  border: 2px solid #945cac;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div input[type="text"]{
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #dcd4ec;
+}
+
 .add-coments{
   line-height: 2;
 }
